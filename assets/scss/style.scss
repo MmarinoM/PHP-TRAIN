@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    min-height: 100vh;
+    font-family: 'Fredoka One', cursive;
+    color: #5e6472;
+    font-size: 2rem;
+}
+
+.container{
+    margin: 0 auto;
+    width: 40%;
+    h1{
+        text-align: center;
+    }
+    #alert{
+        color: #f94144;
+        text-align: center;
+    }
+    #good{
+        color: #90be6d;
+        text-align: center;
+    }
+    
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    label{
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+
+    }
+    input{
+        text-align: right;
+        width: 100%;
+        border: none;
+        color: #e0b1cb;
+        font-family: 'Fredoka One', cursive;
+        font-size: 2rem;
+        background: none;
+        &::placeholder{
+            color: #fcd5ce;
+        }
+    }
+    #submit{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        color: #f9c74f;
+
+    }
+
+}
