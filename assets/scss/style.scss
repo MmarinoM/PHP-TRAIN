@@ -172,3 +172,17 @@ form{
     
     
 }
+.currentInfo{
+    color: white;
+    margin-top: 0;
+    text-align: right;
+    
+}
+.currentValue{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    .currentTitle{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

@@ -1,3 +1,19 @@
+<?php 
+    session_start();
+    // JUSTE POUR AFFICHER LES ERREURS 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    
+    $db = new PDO("mysql:host=localhost;dbname=createUser","root","root");
+    if(isset($_GET['id']) && $_GET['id']>0){
+        $getid = intval($_GET['id']);
+        $displayUser = $db->prepare("SELECT * FROM users WHERE id = ?");
+        $displayUser->execute(array($getid));
+        $userInfo = $displayUser->fetch();
+    
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +28,10 @@
     <?php include 'header.php';?>
     <div class="container">
         <div class="currentValue">
-            <p>Current Username :</p>
-            <p>test</p>
-            <p>Current E-mail adress :</p>
-            <p>test@test.be</p>
+            <p class="currentTitle">Current Username </p>
+            <p class="currentInfo"><?php echo $userInfo['username']?></p>
+            <p class="currentTitle">Current E-mail adress </p>
+            <p class="currentInfo"><?php echo $userInfo['mail']?></p>
         </div>
         <form method="post">
             <label for="newUN">New Username</label>

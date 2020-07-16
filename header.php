@@ -16,7 +16,7 @@
         ?>
         <ul class="userInterface">
             <li><?php echo $userInfo['username']; ?></li>
-            <li><a href="edit.php"><i class="fas fa-user-edit"></i></a></li>
+            <li><a href="<?php echo "edit.php?id=".$_SESSION['id'];?>"><i class="fas fa-user-edit"></i></a></li>
             <li><a href="disconnect.php"><i class="fas fa-door-open"></i></a></li>
         </ul>
         
