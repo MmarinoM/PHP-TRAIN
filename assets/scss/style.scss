@@ -13,6 +13,7 @@ body{
     h1{
         text-align: center;
     }
+    
     #alert{
         color: #f94144;
         text-align: center;
@@ -28,12 +29,17 @@ form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
     
     label{
         text-align: left;
         margin-top: 20px;
         margin-bottom: 5px;
         font-size: 1.3rem;
+        
+        
 
     }
     input{
@@ -49,6 +55,17 @@ form{
         }
     }
     #submit{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 40%;
+        text-align: center;
+        color: #f9c74f;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+    #loginSubmit{
         margin-top: 50px;
         width: 100%;
         text-align: center;
@@ -56,4 +73,102 @@ form{
 
     }
 
+}
+
+#loginForm{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    input{
+        text-align: center;
+        
+    }
+}
+.edit{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.gif{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.blockEdit{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.or{
+    color: white;
+    text-align: center;
+}
+
+.register{
+    margin-left: auto;
+    margin-right: auto;
+    color: #f9c74f;
+    text-decoration: none;
+    
+}
+
+.containFlex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.head{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-height: 50px;
+    align-content: center;
+    i{
+        color: #e5989b;
+    }
+    .userInterface{
+        display: flex;
+        justify-content: flex-end;
+        min-width: 300px;
+        max-height: 50px;
+        margin: 0;
+        li{
+            list-style: none;
+            margin-left: 5px;
+            margin-right: 5px;
+            i{
+                color: #f4a261;
+            }
+        }
+    }
+}
+#submitEdit{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 250px;
+    text-align: center;
+    color: #f9c74f;
+    background-color: white;
+    border-radius: 10px;
+
+}
+#logoHome{
+    color: white;
+}
+.logoHome{
+    color: white;
+    text-decoration: none;
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }

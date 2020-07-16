@@ -21,7 +21,10 @@ body {
 form {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px; }
   form label {
     text-align: left;
     margin-top: 20px;
@@ -38,7 +41,94 @@ form {
     form input::placeholder {
       color: #fcd5ce; }
   form #submit {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 40%;
+    text-align: center;
+    color: #f9c74f;
+    background-color: white;
+    border-radius: 10px; }
+  form #loginSubmit {
     margin-top: 50px;
     width: 100%;
     text-align: center;
     color: #f9c74f; }
+
+#loginForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px; }
+  #loginForm input {
+    text-align: center; }
+
+.edit {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.gif {
+  margin: 0 auto;
+  width: 100%; }
+
+.blockEdit {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.or {
+  color: white;
+  text-align: center; }
+
+.register {
+  margin-left: auto;
+  margin-right: auto;
+  color: #f9c74f;
+  text-decoration: none; }
+
+.containFlex {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.head {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-height: 50px;
+  align-content: center; }
+  .head i {
+    color: #e5989b; }
+  .head .userInterface {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+    max-height: 50px;
+    margin: 0; }
+    .head .userInterface li {
+      list-style: none;
+      margin-left: 5px;
+      margin-right: 5px; }
+      .head .userInterface li i {
+        color: #f4a261; }
+
+#submitEdit {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 250px;
+  text-align: center;
+  color: #f9c74f;
+  background-color: white;
+  border-radius: 10px; }
+
+#logoHome {
+  color: white; }
+
+.logoHome {
+  color: white;
+  text-decoration: none;
+  width: 105px;
+  margin-left: auto;
+  margin-right: auto; }
