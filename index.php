@@ -22,8 +22,15 @@ if(isset($_POST['submitLogin'])){
             $_SESSION['username'] = $userInfo['username'];
             $_SESSION['id'] = $userInfo['id'];
             $_SESSION['mail'] = $userInfo['mail'];
-            header("location: profil.php?id=".$_SESSION['id']);
+            $_SESSION['password'] = $userInfo['password'];
+            if($_SESSION['username'] == 'admin'){
+                header("location: admin.php");
+                exit();
+            }else{
+                header("location: profil.php?id=".$_SESSION['id']);
             exit();
+            }
+            
         }
         else{
             $error = "sorry frero mais ce compte n'existe pas";
